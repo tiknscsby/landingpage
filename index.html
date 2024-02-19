@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            min-height: 100vh;
+            margin-bottom: 10px;
+            /* Sesuaikan nilai margin-bottom sesuai keinginan */
+        }
+
+        .rounded-box {
+            max-width: 90%;
+            width: 400px;
+            /* Perbesar lebar kotak putih */
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-top: 23px;
+            /* Sesuaikan nilai margin-bottom sesuai keinginan */
+        }
+
+        .profile-img {
+            width: 100%;
+            max-width: 120px;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        h3,
+        p {
+            margin: 10px 0;
+        }
+
+        h3 {
+            font-size: x-large;
+            color: #333;
+        }
+
+        p {
+            font-size: small;
+            color: #666;
+        }
+
+        /* Gaya umum untuk link-container */
+        .link-container {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            /* Mengatur agar link dan tombol berada dalam satu baris */
+            justify-content: space-between;
+            /* Memberikan ruang di antara link dan tombol */
+            align-items: center;
+            /* Menyusun secara vertikal dalam satu baris */
+            border-radius: 5px;
+            padding: 10px 20px;
+            /* Padding untuk link dan tombol */
+        }
+
+        /* Untuk gaya pendaftara */
+        .pendaftaran {
+            background-color: #000080;
+        }
+
+        /* Gaya spesifik untuk setiap prodi */
+        .administrasi-bisnis {
+            background-color: rgb(228, 96, 118);
+        }
+
+        .akuntansi {
+            background-color: #27bd42;
+        }
+
+        .perhotelan {
+            background-color: #fbff00;
+        }
+
+        .teknologi-komputer {
+            background-color: #5d7ce4;
+        }
+
+        .pengelolaan-perhotelan {
+            background-color: #ffa200;
+        }
+
+        .manajemen-pemasaran {
+            background-color: #f12a07;
+            /* Sesuaikan warna latar belakang prodi Manajemen Pemasaran */
+        }
+
+        .manajemen-pemasaran a {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 250px;
+            /* Sesuaikan nilai sesuai kebutuhan */
+        }
+
+        .manajemen-pemasaran button {
+            padding: 10px 10px;
+            background-color: #ffffff;
+            /* Warna latar belakang tombol copy */
+            color: #2d4c6d;
+            /* Warna tulisan tombol copy */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.5s ease;
+        }
+
+        .manajemen-pemasaran button:hover {
+            background-color: #e6e6e6;
+            /* Warna latar belakang tombol copy saat dihover */
+        }
+
+        .link-container a {
+            text-decoration: none;
+            color: #ffffff;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .link-container a:hover {
+            background-color: #0056b3;
+        }
+
+        .link-container button {
+            padding: 10px 10px;
+            background-color: #ffffff;
+            /* Warna latar belakang tombol copy */
+            color: #2d4c6d;
+            /* Warna tulisan tombol copy */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .link-container button:hover {
+            background-color: #e6e6e6;
+            /* Warna latar belakang tombol copy saat dihover */
+        }
+
+        /* Media query untuk responsif */
+        @media (max-width: 768px) {
+            .rounded-box {
+                width: 80%;
+            }
+        }
+    </style>
+    <title>Marketing KIT | Politeknik NSC Surabaya</title>
+</head>
+
+<body>
+    <div class="rounded-box">
+        <img class="profile-img" src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Logonsc.png"
+            alt="Foto Profil">
+        <h3>Mohamad Akhsan Rofiqi</h3>
+        <p>Guru - SMK Ti Hidayatullah Berau</p>
+        <br>
+        <!-- Link-container untuk pendaftaran -->
+        <div class="link-container pendaftaran">
+            <a href="pendaftaran.html">Link pendaftaran</a>
+            <button onclick="copyLink('pendaftaran')">copy</button>
+        </div>
+
+        <!-- Link-container untuk D3 Administrasi Bisnis -->
+        <div class="link-container administrasi-bisnis">
+            <a href="https://yturbz0lv8.preview-postedstuff.com/V2-SLIx-TAmc-jFqF-Elrr/">D3 Administrasi Bisnis</a>
+            <button onclick="copyLink('administrasi_bisnis')">copy</button>
+        </div>
+
+        <!-- Link-container untuk D3 Akuntansi -->
+        <div class="link-container akuntansi">
+            <a href="https://yturbz0lv8.preview-postedstuff.com/V2-SLIx-TAmc-jFqF-Elrr/" style="color: #000000;">D3 Akuntansi</a>
+            <button onclick="copyLink('akuntansi')">copy</button>
+        </div>
+
+        <!-- Link-container untuk D3 Perhotelan -->
+        <div class="link-container perhotelan">
+            <a href="https://yturbz0lv8.preview-postedstuff.com/V2-SLIx-TAmc-jFqF-Elrr/" style="color: #000000;">D3 Perhotelan</a>
+            <button onclick="copyLink('perhotelan')">copy</button>
+        </div>
+
+        <!-- Link-container untuk D3 Teknologi Komputer -->
+        <div class="link-container teknologi-komputer">
+            <a href="d3tk/index.html">D3 Teknologi Komputer</a>
+            <button onclick="copyLink('teknologi_komputer')">copy</button>
+        </div>
+
+        <!-- Link-container untuk D4 Manajemen Pemasaran Internasional -->
+        <div class="link-container manajemen-pemasaran">
+            <a href="https://yturbz0lv8.preview-postedstuff.com/V2-SLIx-TAmc-jFqF-Elrr/">D4 Manajemen Pemasaran Internasional</a>
+            <button onclick="copyLink('manajemen_pemasaran_internasional')">copy</button>
+        </div>
+
+        <!-- Link-container untuk D4 Pengelolaan Perhotelan -->
+        <div class="link-container pengelolaan-perhotelan">
+            <a href="/d4pp/index.html" style="color: #000000;">D4 Pengelolaan Perhotelan</a>
+            <button onclick="copyLink('pengelolaan_perhotelan')">copy</button>
+        </div>
+    </div>
+
+    <script>
+        function copyLink(prodi) {
+            // Gantilah dengan link yang sesuai untuk setiap prodi
+            var links = {
+                'pendaftaran': 'https://example.com/pendaftaran',
+                'administrasi_bisnis': 'https://example.com/administrasi_bisnis',
+                'akuntansi': 'https://example.com/akuntansi',
+                'perhotelan': 'https://example.com/perhotelan',
+                'teknologi-komputer': 'https://example.com/teknologi_komputer',
+                'manajemen_pemasaran_internasional': 'https://example.com/manajemen_pemasaran',
+                'pengelolaan_perhotelan': 'https://example.com/pengelolaan_perhotelan'
+            };
+
+            // Mendapatkan link berdasarkan prodi
+            var linkToCopy = links[prodi];
+
+            if (linkToCopy) {
+                navigator.clipboard.writeText(linkToCopy).then(function () {
+                    alert("Link berhasil disalin!");
+                }).catch(function () {
+                    alert("Gagal menyalin link.");
+                });
+            } else {
+                alert("Prodi tidak valid.");
+            }
+        }
+    </script>
+</body>
+
+</html>
